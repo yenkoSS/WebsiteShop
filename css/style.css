@@ -3,7 +3,9 @@
 :root {
   --color-text: #3b3b3b;
   --color-blue: #0053c4;
+  --color-blue-light: #4385e0;
   --color-orange: #ea2c00;
+  --color-orange-light: #e65838;
   --color-section-bg: rgb(242, 242, 242);
 }
 
@@ -70,7 +72,7 @@ h4 span {
   font-weight: 300;
 }
 
-h5 {
+h3 {
   font-size: 2rem;
   font-weight: 500;
 }
@@ -119,6 +121,24 @@ button {
   font-size: 16px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 7px;
+}
+
+.btn-card-prices {
+  padding: 1rem 3rem;
+  background-color: var(--color-blue-light);
+  border-radius: 0.5rem;
+  color: white;
+  position: relative;
+  transition: 400ms;
+}
+
+.btn-card-prices-focus {
+  padding: 1rem 3rem;
+  background-color: var(--color-orange-light);
+  border-radius: 0.5rem;
+  color: white;
+  position: relative;
+  transition: 400ms;
 }
 
 .btn-hero-full {
@@ -366,7 +386,87 @@ section {
 /* ----- SECTION SERVICES END ----- */
 
 /* ----- SECTION PRICES ----- */
+.card-prices {
+  padding: 2rem 3rem;
+  background: linear-gradient(to bottom, var(--color-orange-light), var(--color-orange));
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+}
 
+.card-prices-focus {
+  background: linear-gradient(to bottom, var(--color-blue-light), var(--color-blue));
+
+  position: relative;
+  transform: scale(1.2);
+}
+
+.card-prices-tag {
+  font-size: 14px;
+  color: white;
+  background-color: var(--color-orange);
+  padding: 1rem;
+  position: absolute;
+  top: -1.8rem;
+  right: 0.8rem;
+}
+
+.card-prices-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-blue);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.card-prices-title-focus {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.card-prices-price {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.card-prices-price span {
+  font-size: 16px;
+  color: white;
+}
+
+.card-prices-feature {
+  font-size: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.card-prices-feature::before {
+  content: "";
+  min-width: 10px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--color-blue);
+  margin-right: 10px;
+}
+
+.focus::before {
+  background-color: var(--color-orange-light);
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .card-prices-tag {
+    top: -1.8rem;
+    right: -2.2rem;
+  }
+}
 /* ----- SECTION PRICES END ----- */
 
 /* ----- SECTION PORTFOLIO ----- */
