@@ -54,13 +54,14 @@ h4 {
   text-transform: uppercase;
   text-align: start;
   position: relative;
+  transform: translateX(-200px);
+  opacity: 0;
 }
 
 h4::after {
   position: absolute;
   top: 3rem;
   left: 0;
-
   content: "";
   display: block;
   width: 4rem;
@@ -111,6 +112,23 @@ p {
 
 .g-10 {
   row-gap: 10rem;
+}
+
+.row {
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.show-row {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 400ms;
+}
+
+.show-h4 {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 400ms;
 }
 
 /* ----- BUTTONS ----- */

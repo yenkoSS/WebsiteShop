@@ -63,3 +63,23 @@ document.querySelectorAll(".btn-order").forEach((btn) => {
     document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
   });
 });
+
+const rowsList = document.querySelectorAll(".row");
+const headingSectionList = document.querySelectorAll("h4");
+const rowsOberver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    entry.target.classList.toggle("show-row", entry.isIntersecting);
+    if (entry.isIntersecting) rowsOberver.unobserve(entry.target);
+  });
+});
+
+const headingObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("show-h4", entry.isIntersecting);
+    if (entry.isIntersecting) headingObserver.unobserve(entry.target);
+  });
+});
+
+rowsList.forEach((row) => rowsOberver.observe(row));
+headingSectionList.forEach((heading) => headingObserver.observe(heading));
