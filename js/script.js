@@ -16,7 +16,6 @@ document.querySelectorAll(".nav-header-link").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const id = link.getAttribute("href");
-    console.log(id);
     document.querySelector(".nav-header-list-sm").style.display = "none";
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   });
@@ -26,7 +25,6 @@ document.querySelectorAll(".nav-header-link-sm").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const id = link.getAttribute("href");
-    console.log(id);
     document.querySelector(".nav-header-list-sm").style.display = "none";
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   });
@@ -68,7 +66,6 @@ const rowsList = document.querySelectorAll(".row");
 const headingSectionList = document.querySelectorAll("h4");
 const rowsOberver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     entry.target.classList.toggle("show-row", entry.isIntersecting);
     if (entry.isIntersecting) rowsOberver.unobserve(entry.target);
   });
