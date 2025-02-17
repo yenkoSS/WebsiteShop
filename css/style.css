@@ -133,6 +133,10 @@ button {
   transition: 400ms;
 }
 
+.btn-card-prices:hover {
+  transform: translateY(-2px);
+}
+
 .btn-card-prices-focus {
   padding: 1rem 3rem;
   background-color: var(--color-orange-light);
@@ -140,6 +144,10 @@ button {
   color: white;
   position: relative;
   transition: 400ms;
+}
+
+.btn-card-prices-focus:hover {
+  transform: translateY(-2px);
 }
 
 .btn-hero-full {
