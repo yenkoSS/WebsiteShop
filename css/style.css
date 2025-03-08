@@ -580,10 +580,11 @@ section {
 
 .img-portfolio {
   display: block;
-  width: 70%;
+  min-width: 200px;
+  width: 50%;
   height: auto;
   border-radius: 1rem;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.216));
 }
 
 /* ----- SECTION PORTFOLIO END ----- */
