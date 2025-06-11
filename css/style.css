@@ -474,7 +474,7 @@ section {
 .card-prices {
   padding: 2rem 3rem;
   background: linear-gradient(to bottom, var(--color-orange-light), var(--color-orange));
-  width: 80%;
+  width: 90%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 1rem;
   display: flex;
@@ -521,8 +521,18 @@ section {
 }
 
 .card-prices-price span {
-  font-size: 16px;
+  font-size: 2.5rem;
+  font-weight: 600;
   color: white;
+  display: block;
+}
+
+.card-prices-price .span2 {
+  color: var(--color-orange-light);
+}
+
+.card-prices-price .span3 {
+  color: var(--color-blue);
 }
 
 .card-prices-feature {
@@ -530,6 +540,31 @@ section {
   color: white;
   display: flex;
   align-items: center;
+}
+
+.focus-orange {
+  color: var(--color-orange-light);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.divider {
+  content: " ";
+  display: block;
+  background-color: white;
+  width: 30px;
+  height: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.focus-blue {
+  color: var(--color-blue);
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .card-prices-feature::before {
@@ -549,7 +584,7 @@ section {
 }
 
 .text-small {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 576px) {
@@ -559,11 +594,14 @@ section {
   }
 }
 
+/*
 @media screen and (min-width: 1200px) {
   .card-prices-focus {
     transform: scale(1.2);
   }
 }
+*/
+
 /* ----- SECTION PRICES END ----- */
 
 /* ----- SECTION PORTFOLIO ----- */
@@ -603,6 +641,69 @@ section {
   border-radius: 1rem;
 }
 
+.card-contact2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-contact {
+  width: 90%;
+  padding: 4rem;
+  margin-bottom: 3rem;
+}
+
+.contact-details-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.form-label {
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.form-input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  font-family: "Onest", sans-serif;
+  font-size: 12px;
+}
+
+.form-textarea {
+  padding: 5px;
+  resize: none;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  font-family: "Onest", sans-serif;
+  font-size: 12px;
+}
+
+.text-error {
+  color: Red;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.text-success {
+  display: none;
+  font-size: 2.3rem;
+  color: var(--color-blue);
+  font-weight: 500;
+  margin-top: 3rem;
+}
 .icon-contact {
   width: 4.5rem;
   height: auto;
@@ -743,6 +844,21 @@ table td {
 
   .section-portfolio {
     border-radius: 3% 97% 0% 100% / 95% 3% 97% 5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-contact2 {
+    flex-direction: row;
+  }
+
+  .form-contact {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .contact-details-box {
+    width: 50%;
   }
 }
 

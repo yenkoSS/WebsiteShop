@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="css/margin-utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>WebsiteShop - Realizare site de prezentare și mentenanță</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <header id="home">
@@ -168,23 +172,69 @@
         <p class="mbot-50" style="text-align: center">
           Află detali despre pachetele si tarifele aplicate în funcție de nevoile tale.
         </p>
-        <div class="row row-translated g-toggle" style="margin-bottom: 12rem">
+        <div class="row row-translated g-5" style="margin-bottom: 12rem">
           <h2 style="text-align: center" class="mbot-40">Tarife realizare site</h2>
           <div class="col-lg-4 d-flex justify-content-center">
-            <div class="card-prices d-flex flex-column align-items-center">
-              <p class="card-prices-title mbot-10">Starter</p>
-              <p class="card-prices-price mbot-40">3300 <span>LEI</span></p>
+            <div
+              class="card-prices card-prices-focus d-flex flex-column align-items-center"
+            >
+              <p class="card-prices-title-focus mbot-10">Starter</p>
+              <p class="card-prices-price mbot-40">3000 <span class="span2">LEI</span></p>
               <div class="box mbot-40">
+                <p class="card-prices-feature focus mbot-10">
+                  Asistență achiziționare domeniu
+                </p>
+                <p class="card-prices-feature focus mbot-10">Logo gratuit</p>
+                <p class="card-prices-feature focus mbot-10">
+                  Website construit de la zero
+                </p>
+                <p class="card-prices-feature focus mbot-10">Design modern</p>
+                <p class="card-prices-feature focus mbot-10">Design responsive</p>
+
+                <p class="card-prices-feature focus mbot-10">Certificat SSL (HTTPS)</p>
+                <p class="card-prices-feature focus mbot-10">SEO (on-page)</p>
+                <p class="card-prices-feature focus mbot-10">
+                  Integrare cu rețele sociale
+                </p>
+                <p class="card-prices-feature focus mbot-10">
+                  Formular de contact integrat
+                </p>
+                <p class="card-prices-feature focus mbot-10">Adresă de email business</p>
+
+                <p class="card-prices-feature focus mbot-10">Documente legale incluse</p>
+                <p class="card-prices-feature focus mbot-10">
+                  Instalare pe domeniul ales
+                </p>
+                <div class="divider"></div>
+                <p class="card-prices-feature focus focus-orange mbot-10">
+                  O singura pagină principală
+                </p>
+              </div>
+              <button class="btn-card-prices-focus btn-order">Comandă</button>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="card-prices d-flex flex-column align-items-center">
+              <p class="card-prices-title mbot-10">Medium</p>
+              <p class="card-prices-price mbot-40">4000 <span class="span3">LEI</span></p>
+              <div class="box mbot-40">
+                <p class="card-prices-feature mbot-10">Asistență achiziționare domeniu</p>
                 <p class="card-prices-feature mbot-10">Logo gratuit</p>
+                <p class="card-prices-feature mbot-10">Website construit de la zero</p>
                 <p class="card-prices-feature mbot-10">Design modern</p>
                 <p class="card-prices-feature mbot-10">Design responsive</p>
-                <p class="card-prices-feature mbot-10">Clean code</p>
+
                 <p class="card-prices-feature mbot-10">Certificat SSL (HTTPS)</p>
                 <p class="card-prices-feature mbot-10">SEO (on-page)</p>
-                <p class="card-prices-feature mbot-10">Formular de contact</p>
-                <p class="card-prices-feature mbot-10">Termeni și condiții</p>
-                <p class="card-prices-feature mbot-10">Politica de confidențialitate</p>
-                <p class="card-prices-feature mbot-10">4 secțiuni</p>
+                <p class="card-prices-feature mbot-10">Integrare cu rețele sociale</p>
+                <p class="card-prices-feature mbot-10">Formular de contact integrat</p>
+                <p class="card-prices-feature mbot-10">Adresă de email business</p>
+                <p class="card-prices-feature mbot-10">Documente legale incluse</p>
+                <p class="card-prices-feature mbot-10">Instalare pe domeniul ales</p>
+                <div class="divider"></div>
+                <p class="card-prices-feature focus-blue mbot-10">
+                  Pagina principală + 5 pagini
+                </p>
               </div>
               <button class="btn-card-prices btn-order">Comandă</button>
             </div>
@@ -193,107 +243,127 @@
             <div
               class="card-prices card-prices-focus d-flex flex-column align-items-center"
             >
-              <div class="card-prices-tag">Recomandat</div>
-              <p class="card-prices-title-focus mbot-10">Medium</p>
-              <p class="card-prices-price mbot-40">3600 <span>LEI</span></p>
+              <p class="card-prices-title-focus mbot-10">Custom</p>
+              <p class="card-prices-price mbot-40">5000 <span class="span2">LEI</span></p>
               <div class="box mbot-40">
+                <p class="card-prices-feature focus mbot-10">
+                  Asistență achiziționare domeniu
+                </p>
                 <p class="card-prices-feature focus mbot-10">Logo gratuit</p>
+                <p class="card-prices-feature focus mbot-10">
+                  Website construit de la zero
+                </p>
                 <p class="card-prices-feature focus mbot-10">Design modern</p>
                 <p class="card-prices-feature focus mbot-10">Design responsive</p>
-                <p class="card-prices-feature focus mbot-10">Clean code</p>
+
                 <p class="card-prices-feature focus mbot-10">Certificat SSL (HTTPS)</p>
                 <p class="card-prices-feature focus mbot-10">SEO (on-page)</p>
-                <p class="card-prices-feature focus mbot-10">Formular de contact</p>
-                <p class="card-prices-feature focus mbot-10">Termeni și condiții</p>
                 <p class="card-prices-feature focus mbot-10">
-                  Politica de confidențialitate
+                  Integrare cu rețele sociale
                 </p>
-                <p class="card-prices-feature focus mbot-10">5 secțiuni</p>
+                <p class="card-prices-feature focus mbot-10">
+                  Formular de contact integrat
+                </p>
+                <p class="card-prices-feature focus mbot-10">Adresă de email business</p>
+
+                <p class="card-prices-feature focus mbot-10">Documente legale incluse</p>
+                <p class="card-prices-feature focus mbot-10">
+                  Instalare pe domeniul ales
+                </p>
+                <div class="divider"></div>
+                <p class="card-prices-feature focus focus-orange mbot-10">
+                  Pagina principală + 10 pagini
+                </p>
               </div>
               <button class="btn-card-prices-focus btn-order">Comandă</button>
             </div>
           </div>
-          <div class="col-lg-4 d-flex justify-content-center">
-            <div class="card-prices d-flex flex-column align-items-center">
-              <p class="card-prices-title mbot-10">Pro</p>
-              <p class="card-prices-price mbot-40">650<span>LEI / secțiune</span></p>
-              <div class="box mbot-40">
-                <p class="card-prices-feature mbot-10">Logo gratuit</p>
-                <p class="card-prices-feature mbot-10">Design modern</p>
-                <p class="card-prices-feature mbot-10">Design responsive</p>
-                <p class="card-prices-feature mbot-10">Clean code</p>
-                <p class="card-prices-feature mbot-10">Certificat SSL (HTTPS)</p>
-                <p class="card-prices-feature mbot-10">SEO (on-page)</p>
-                <p class="card-prices-feature mbot-10">Formular de contact</p>
-                <p class="card-prices-feature mbot-10">Termeni și condiții</p>
-                <p class="card-prices-feature mbot-10">Politica de confidențialitate</p>
-                <p class="card-prices-feature mbot-10">Min 6 secțiuni</p>
-              </div>
-              <button class="btn-card-prices btn-order">Comandă</button>
-            </div>
-          </div>
         </div>
         <p class="text-small mbot-10">
-          <strong>Logo gratuit</strong> - dacă nu ai un logo pentru afacerea ta, îți
-          oferim un logo personalizat gratuit!
+          <strong>Asistență la achiziționarea domeniului</strong>. Oferim asistență pas cu
+          pas în vederea obținerii domeniul potrivit pentru afacerea dumneavoastră (ex:
+          www.domeniulmeu.ro), pe numele dumneavoastră sau pe firma dumneavoastră.
         </p>
         <p class="text-small mbot-10">
-          <strong>Design modern</strong> - Pentru un impact major, este foarte important
-          ca site-ul tău de prezentare să respecte standardele actuale de design. Din
-          acest motiv îți vom realiza un site cu un design premium și usor de navigat!
+          <strong>Logo modern, adaptat specificului afacerii</strong>. Vă oferim un logo
+          curat, profesional, simplu și modern, perfect integrat în identitatea vizuală a
+          site-ului dumneavoastră.
         </p>
         <p class="text-small mbot-10">
-          <strong>Design responsive</strong> - site-ul este adaptabil la mărimea ecranului
-          device-ului de pe care este accesat: telefon, tabletă, laptop, desktop.
+          <strong>Website construit de la zero</strong>. Site-ul este creat manual în cod
+          fără a utiliza platforme lente, astfel obținându-se o performanță maximă,
+          dimensiune redusă, încărcare extrem de rapidă și control complet asupra fiecărui
+          detaliu.
         </p>
         <p class="text-small mbot-10">
-          <strong>Clean code</strong> - site-ul este realizat în cod de la zero. NU
-          folosim template-uri. Fiecare pagină web este personalizată în funcție de
-          cerințele clientului.
+          <strong>Design modern, 100% responsive</strong>. Pentru un impact major, este
+          foarte important ca site-ul dumneavoastră să respecte standardele actuale de
+          design. Din acest motiv vom crea un site cu un design premium, aspect
+          profesional, curat și adaptat domeniului dumneavoastră de activitate. De
+          asemenea site-ul se adaptează automat pe telefon, tabletă, laptop și PC pentru o
+          experiență impecabilă pe orice dispozitiv.
         </p>
         <p class="text-small mbot-10">
-          <strong>Certificat SSL (HTTPS)</strong> - implementarea unui certificat SSL nu
-          doar că protejează utilizatorii, dar și crește reputația site-ului și poate
-          stimula creșterea organică prin SEO. Motoarele de căutare (precum Google)
-          prioritizează site-urile cu SSL, îmbunătățind poziționarea în rezultate. Un
-          lacăt vizibil în bara de adrese și „https” arată că site-ul este securizat, ceea
-          ce crește încrederea utilizatorilor.
+          <strong>Certificat SSL inclus (securizare HTTPS)</strong>. Implementarea unui
+          certificat SSL nu doar că protejează utilizatorii, dar și crește reputația
+          site-ului și poate stimula creșterea organică prin SEO. Motoarele de căutare
+          (precum Google) prioritizează site-urile cu certificat SSL, îmbunătățind
+          poziționarea în rezultate. Un lacăt vizibil în bara de adrese și „https” arată
+          că site-ul este securizat, ceea ce crește încrederea utilizatorilor.
         </p>
 
         <p class="text-small mbot-10">
-          <strong>SEO on-page</strong> - se referă la optimizarea elementelor de pe o
-          pagină web pentru a îmbunătăți poziționarea în motoarele de căutare și a atrage
-          mai mult trafic organic. SEO on-page te ajută să faci site-ul mai vizibil și mai
-          atractiv atât pentru oameni, cât și pentru motoarele de căutare!
+          <strong>SEO on-page</strong>. Vom optimiza site-ul pentru ca Google să îl poată
+          indexa corect, cu structură clară și conținut pregătit pentru rezultate mai bune
+          în căutări și pentru a atrage mai mult trafic organic. Această tehnică ajută să
+          ca site-ul sa fie mai vizibil și mai atractiv atât pentru oameni, cât și pentru
+          motoarele de căutare.
         </p>
         <p class="text-small mbot-10">
-          <strong>Formular de contact</strong> - este o interfață prin care utilizatorii
-          pot trimite mesaje direct administratorilor site-ului. Acesta include câmpuri
-          precum: nume și prenume, adresă de e-mail, număr de telefon și mesajul
-          clientului. Este o metodă simplă și eficientă de comunicare între utilizatori și
-          echipa site-ului, folosită pentru întrebări, suport sau colaborări.
+          <strong>Încărcare rapidă și navigare intuitivă</strong>. Site-ul este optimizat
+          pentru viteză și ușurință în utilizare pentru ca vizitatorii să găsească rapid
+          informațiile importante.
         </p>
         <p class="text-small mbot-10">
-          <strong>Politica de confidențialitate</strong> - este un document care explică
-          modul în care un site web colectează, utilizează, stochează și protejează datele
-          personale ale utilizatorilor. Este un document esențial pentru transparență și
-          respectarea reglementărilor, cum ar fi GDPR în Uniunea Europeană.
+          <strong>Integrare cu rețele sociale</strong>. Acest serviciu presupune
+          conectarea website-ului dumneavoastră cu platformele populare de social media
+          (precum Facebook, Instagram, LinkedIn, Twitter, WhatsApp, TikTok etc.), astfel
+          încât să obțineți o prezență online coerentă și mai multă vizibilitate. Mai
+          exact, integrarea cu rețelele sociale include butoane (linkuri) pe site-ul
+          dumneavoastră, vizibile și accesibile către profilurile afacerii dumneavoastră
+          de social media.
         </p>
 
         <p class="text-small mbot-10">
-          <strong>Termeni și condiții</strong> - reprezintă un set de reguli și acorduri
-          care definesc modul în care utilizatorii pot accesa și folosi site-ul. Este un
-          document juridic important care protejează atât utilizatorii, cât și
-          proprietarii site-ului.
+          <strong>Formular de contact integrat</strong>. Acest serviciu presupune
+          includerea pe site a unui formular prin care vizitatorii pot lua legătura cu
+          dumneavoastră rapid și ușor, fără să fie nevoiți să copieze o adresă de email
+          sau să sune. Clienții vor putea trimite mesaje direct din site către adresa
+          dumneavoastră de email prin intermediul acestui formular de contact.
         </p>
 
+        <p class="text-small mbot-10">
+          <strong>Adresă de email business</strong>. Vă oferim o adresă de email
+          profesională, asociată domeniului website-ului dumneavoastră (ex:
+          contact@afacereamea.ro) cu redirecționare către adresa dumneavoastră de email,
+          pentru o imagine profesională.
+        </p>
+        <p class="text-small mbot-10">
+          <strong>Documente legale incluse în site</strong>. Acest serviciu presupune
+          includerea pe website a paginilor obligatorii din punct de vedere legal,
+          adaptate activității dumneavoastră. Ele protejează atât afacerea, cât și
+          utilizatorii site-ului, oferind transparență și conformitate legală. Documente
+          incluse: "Termeni și condiții de utilizare a site-ului" – stabilesc regulile
+          privind accesarea, utilizarea conținutului, limitarea răspunderii și drepturile
+          de proprietate intelectuală și "Politica de confidențialitate" – explică modul
+          în care sunt colectate, stocate și utilizate datele personale ale vizitatorilor,
+          în conformitate cu legislația GDPR.
+        </p>
         <p class="text-small mbot-100">
-          <strong>Secțiune</strong> - prin secțiune se întelege o parte din pagină:
-          Galerie, Tarife, Testimoniale etc. Pagina principală (header) și footer sunt
-          incluse în fiecare pachet. La fiecare pachet de 5, 6 sau X secțiuni, se adaugă
-          gratis pagina principală (Header) si footer (final pagină). De exemplu, o pagină
-          web din pachetul Starter (2900 LEI) o să conțină în total 7 secțiuni: Header,
-          Servicii, Tarife, Galerie, Testimoniale, Contact, Footer.
+          <strong>Instalare completă pe domeniul ales</strong>. Acest serviciu presupune
+          lansarea completă a site-ului pe domeniul web ales de dumneavoastră (ex:
+          www.firma-dvs.ro), astfel încât acesta să fie funcțional, vizibil online și
+          pregătit pentru vizitatori.
         </p>
 
         <div
@@ -453,31 +523,68 @@
           timp posibil.
         </p>
         <div class="row row-translated g-7">
-          <div
-            class="col-12 col-lg-6 d-none d-md-flex justify-content-center align-items-center"
-          >
-            <img
-              src="icons/developer.svg"
-              alt="contact websiteshop"
-              class="img-services"
-            />
-          </div>
-          <div
-            class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center"
-          >
-            <h2 class="mbot-70">Date de contact</h2>
-            <div class="card-contact">
-              <div class="contact-feature mbot-40">
-                <img
-                  src="icons/phone-call.svg"
-                  alt="telefon websiteshop"
-                  class="icon-contact"
-                />
-                <p class="text-contact">0749 406 638</p>
-              </div>
-              <div class="contact-feature">
-                <img src="icons/email.svg" alt="email websiteshop" class="icon-contact" />
-                <p class="text-contact">office@websiteshop.ro</p>
+          <div class="col-lg-12">
+            <div class="card-contact2 d-flex justify-content-center">
+              <form class="form-contact">
+                <p class="text-error"></p>
+                <div class="box-form-contact mbot-20">
+                  <label class="form-label" for="">Numele dumneavoastră</label>
+                  <input
+                    class="form-input"
+                    id="form-name"
+                    type="text"
+                    placeholder="Introduceți numele dvs. complet..."
+                  />
+                </div>
+                <div class="box-form-contact mbot-20">
+                  <label class="form-label" for="">Adresă de e-mail</label>
+                  <input
+                    id="form-email"
+                    class="form-input"
+                    type="text"
+                    placeholder="Introduceți adresa dvs. de e-mail..."
+                  />
+                </div>
+                <div class="box-form-contact mbot-20">
+                  <label class="form-label" for="">Telefon</label>
+                  <input
+                    class="form-input"
+                    id="form-phone"
+                    type="text"
+                    placeholder="Introduceți numărul dvs. de telefon..."
+                  />
+                </div>
+                <div class="box-form-contact mbot-20">
+                  <label class="form-label" for="">Mesaj</label>
+                  <textarea
+                    id="form-message"
+                    class="form-textarea"
+                    type="text"
+                    placeholder="Introduceți mesajul dumneavoastră..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-card-prices">Trimite</button>
+                <p class="text-success">Mesajul a fost transmis! Mulțumim!</p>
+              </form>
+              <div class="contact-details-box">
+                <div>
+                  <div class="contact-feature mbot-40">
+                    <img
+                      src="icons/phone-call.svg"
+                      alt="telefon websiteshop"
+                      class="icon-contact"
+                    />
+                    <p class="text-contact">0749 406 638</p>
+                  </div>
+                  <div class="contact-feature">
+                    <img
+                      src="icons/email.svg"
+                      alt="email websiteshop"
+                      class="icon-contact"
+                    />
+                    <p class="text-contact">contact@websiteshop.ro</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -565,5 +672,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/formjs.js"></script>
   </body>
 </html>
