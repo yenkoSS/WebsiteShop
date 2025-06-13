@@ -427,6 +427,18 @@ header {
   margin-right: 10px;
 }
 
+.icon-quick-contact-whatsapp {
+  position: fixed;
+  height: auto;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.171));
+  z-index: 5;
+  bottom: 6rem;
+  right: 3rem;
+  width: 6rem;
+  height: auto;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.171));
+}
+
 @media screen and (min-width: 576px) {
   .icon-logo-nav-header {
     height: 25px;
