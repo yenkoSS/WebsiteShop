@@ -208,7 +208,7 @@ button {
   padding: 1rem 4rem;
   background-color: white;
   color: var(--color-orange-light);
-  border: 2px solid var(--color-orange);
+  border: 2px solid var(--color-blue);
   font-weight: 600;
   border-radius: 0.5rem;
   position: relative;
@@ -229,7 +229,7 @@ button {
   height: 100%;
   top: 100%;
   left: 0;
-  background-color: var(--color-orange);
+  background-color: var(--color-blue);
   transition: 400ms;
   z-index: -1;
 }
@@ -291,12 +291,29 @@ header {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   color: rgb(95 95 95);
   transition: 300ms;
 }
 
+.nav-header .nav-header-list-lg .nav-header-link-special {
+  color: var(--color-blue);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: 300ms;
+}
+
 .nav-header .nav-header-list-lg .nav-header-link:hover {
+  color: var(--color-orange);
+  transform: translateY(-10px);
+  transition: 300ms;
+}
+
+.nav-header .nav-header-list-lg .nav-header-link-special:hover {
   color: var(--color-orange);
   transform: translateY(-10px);
   transition: 300ms;
@@ -340,6 +357,15 @@ header {
   color: white;
 }
 
+.nav-header .nav-header-list-sm .nav-header-link-sm-special {
+  text-decoration: none;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
 .icon-close-menu {
   position: absolute;
   top: 25px;
@@ -377,6 +403,11 @@ header {
 .text-hero span {
   color: var(--color-blue);
   font-weight: 500;
+}
+
+.text-hero-details-title {
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 .text-hero-details {
@@ -425,8 +456,44 @@ header {
 /* ----- HEADER END ----- */
 
 section {
-  padding: 8rem 0rem;
+  padding: 8rem 1rem;
+  scroll-margin-top: 4rem;
 }
+
+/* ----- SECTION ADVANTAGES ----- */
+
+.card-advantages {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  border-radius: 5px;
+  padding: 30px;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.card-advantages:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.39);
+  transition: 200ms ease-in;
+  cursor: pointer;
+}
+
+.icon-advantages {
+  width: 7rem;
+  min-width: 40px;
+  height: auto;
+  padding: 12px;
+  background-color: var(--color-blue);
+  border-radius: 3px;
+}
+
+.text-title-advantages {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-orange);
+}
+
+/* ----- SECTION ADVANTAGES END ------ */
 /* ----- SECTION SERVICES ----- */
 
 .section-services {
@@ -609,6 +676,7 @@ section {
 .section-portfolio {
   background-color: var(--color-section-bg);
   border-radius: 0;
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.233);
 }
 
 .img-portfolio-anchor {
@@ -649,13 +717,13 @@ section {
 }
 
 .form-contact {
-  width: 90%;
+  width: 100%;
   padding: 4rem;
   margin-bottom: 3rem;
 }
 
 .contact-details-box {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -665,7 +733,7 @@ section {
 .box-form-contact {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
 }
 
 .form-label {
@@ -840,6 +908,7 @@ table td {
 
   .section-services {
     border-radius: 0% 100% 6% 94% / 92% 4% 96% 8%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
   }
 
   .section-portfolio {

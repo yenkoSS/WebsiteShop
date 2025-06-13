@@ -21,6 +21,13 @@ document.querySelectorAll(".nav-header-link").forEach((link) => {
   });
 });
 
+document.querySelector(".nav-header-link-special").addEventListener("click", (e) => {
+  e.preventDefault();
+  const id = document.querySelector(".nav-header-link-special").getAttribute("href");
+  document.querySelector(".nav-header-list-sm").style.display = "none";
+  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+});
+
 document.querySelectorAll(".nav-header-link-sm").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -28,6 +35,13 @@ document.querySelectorAll(".nav-header-link-sm").forEach((link) => {
     document.querySelector(".nav-header-list-sm").style.display = "none";
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   });
+});
+
+document.querySelector(".nav-header-link-sm-special").addEventListener("click", (e) => {
+  e.preventDefault();
+  const id = document.querySelector(".nav-header-link-sm-special").getAttribute("href");
+  document.querySelector(".nav-header-list-sm").style.display = "none";
+  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 });
 
 document.querySelectorAll(".nav-footer-link").forEach((link) => {
