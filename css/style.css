@@ -482,6 +482,13 @@ section {
   padding: 30px;
   height: 100%;
   border-radius: 1rem;
+  transition: 200ms ease-in-out;
+}
+
+.card-advantages:hover .icon-advantages {
+  transform: scale(1.1);
+  transition: 200ms ease-in;
+  background-color: var(--color-blue-light);
 }
 
 .card-advantages:hover {
@@ -497,6 +504,7 @@ section {
   padding: 12px;
   background-color: var(--color-blue);
   border-radius: 3px;
+  transition: 200ms ease-out;
 }
 
 .text-title-advantages {
