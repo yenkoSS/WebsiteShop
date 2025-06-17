@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+
+Allow: /creare-site-afaceri-locale/
+
+Sitemap: https://websiteshop.ro/sitemap.xml
